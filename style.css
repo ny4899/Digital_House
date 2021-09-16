@@ -1,0 +1,1073 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* ========================================== */
+.dis_flex {
+  display: flex !important;
+}
+.dis_block {
+  display: block !important;
+}
+.dis_none {
+  display: none !important;
+}
+/* ========================================== */
+main {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/*----- css foe navbar full screen starts  -----*/
+header {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  box-shadow: 0 1px 5px;
+}
+.logo_cont {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo_cont h2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  transition: all 0.2s;
+  letter-spacing: 1px;
+}
+.logo_cont h2 a:hover {
+  font-size: 26px;
+}
+.nav_cont {
+  width: calc(100% - 100px);
+  height: 100%;
+  display: flex;
+  justify-content: right;
+}
+.nav_link_box {
+  width: 600px;
+  height: 100%;
+}
+.nav_link_box ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav_link_box ul li {
+  line-height: 60px;
+  list-style: none;
+}
+.nav_link_box ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: all 0.3s;
+  color: black;
+}
+.nav_link_box ul li a:hover {
+  background-color: rgb(240, 238, 238);
+}
+.nav_link_box ul li a i {
+  margin-right: 5px;
+}
+
+.nav_cont .hum {
+  display: none; /* making display none of humburger icon container*/
+}
+/* ----- css foe navbar full screen ensds  -----*/
+/* -------------------------------------------- */
+/*----- css for banner full screen starts  -----*/
+
+.banner {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-image: url(bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5%;
+}
+.banner h1 {
+  font-size: 50px;
+  padding: 10px 5px;
+  color: white;
+}
+.banner p {
+  padding: 10px 5px;
+  margin: 30px 0 10px 0;
+  color: white;
+  font-size: 20px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+.banner a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border: none;
+  word-spacing: 2px;
+  background-color: gray;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.banner a:hover {
+  background-color: white;
+}
+.banner span {
+  color: blue;
+  font-weight: bolder;
+}
+
+/*----- css for banner full screen ensds  -----*/
+/*--- css for about the company section in full screen starts --*/
+section {
+  width: 100%;
+  padding: 50px 0 100px 0;
+}
+section .head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+}
+section h1 {
+  font-size: 25px;
+  margin-top: 30px;
+  text-align: center;
+}
+section p {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+section .specification_cont {
+  width: 100%;
+  display: flex;
+}
+section .specification_cont .specification_cont_box {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.specification_card {
+  width: 45%;
+  /* ============ */
+  height: max-content; /* have to change to max_content*/
+  /* ============ */
+}
+.specification_card a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  color: black;
+}
+.specification_inner_box {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blanchedalmond; */
+  transition: all 0.5s;
+  box-shadow: 2px 2px 7px;
+}
+.specification_inner_box i {
+  margin-top: 20px;
+  font-size: 70px;
+}
+.specification_inner_box h2 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.specification_inner_box p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+}
+/*--- css for about the company section in full screen ends --*/
+
+/*--- css for about the company section cards bg-img starts --*/
+#responsive {
+  background-image: url(mob_resp.jpg);
+}
+#passion {
+  background-image: url(mob_resp2.jpg);
+}
+#design {
+  background-image: url(mob_resp3.jpg);
+}
+#support {
+  background-image: url(mob_resp4.jpg);
+}
+.image_centering {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*--- css for about the company section cards bg-img ends --*/
+
+/* -------------------------------------------------------- */
+
+/* hover effect on specificaton cards starts */
+.specification_card a:hover .specification_inner_box {
+  background-color: bisque;
+}
+/* hover effect on specificaton cards ends */
+
+/* -------------------------------------------------------- */
+
+/*--- css for We know design section in full screen starts --*/
+.our_design {
+  width: 100%;
+  padding: 8% 5%;
+  background-color: rgb(253, 227, 222);
+}
+.our_design_cont {
+  width: 100%;
+  display: flex;
+}
+.our_design_content_box {
+  width: 50%;
+  padding-right: 50px;
+}
+.our_design_video_box {
+  width: 50%;
+}
+.our_design_video_box video {
+  border-radius: 20px;
+}
+.our_design_video_box .video_box {
+  width: 100%;
+}
+.our_design_content_box h2 {
+  font-size: 30px;
+}
+.our_design_content_box p {
+  font-size: 20px;
+  margin: 30px 0 15px 0;
+}
+.our_design_content_box a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  word-spacing: 2px;
+  background-color: rgb(250, 153, 153);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.our_design_content_box a:hover {
+  background-color: white;
+}
+.our_design_content_box a i {
+  margin-right: 5px;
+}
+/*--- css for We know design section in full screen ends --*/
+/*--- css for our team slider section in full screen starts --*/
+.team_slider_container {
+  width: 100%;
+  padding: 50px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team_slider_head {
+  width: 100%;
+}
+.team_slider_head h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.team_slider_head p {
+  margin: 10px 0 50px 0;
+  text-align: center;
+  font-size: 20px;
+}
+.team_slider_card_outer {
+  width: 90%;
+  position: relative;
+}
+.team_slider_card_outer i {
+  padding: 10px 14px;
+  background-color: grey;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.team_slider_card_inner {
+  width: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  display: flex;
+}
+.team_slider_card_inner::-webkit-scrollbar {
+  width: 0;
+}
+.team_card_container {
+  flex-basis: 320px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background-color: #e2e0e5;
+  margin-left: 20px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  border-radius: 30px;
+}
+.team_card_container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.team_card_container h2 {
+  font-size: 30px;
+  margin: 20px 0 10px 0;
+  text-align: center;
+}
+.team_card_container p {
+  text-align: center;
+}
+.team_slider_card_outer #lift_btn {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(-50%, -50%);
+}
+.team_slider_card_outer #right_btn {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translate(-50%, -50%);
+}
+.team_slider_more_btn {
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.team_slider_more_btn a {
+  padding: 15px 30px;
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  word-spacing: 2px;
+  color: black;
+  background-color: rgb(250, 153, 153);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.team_slider_more_btn a:hover {
+  background-color: #e2e0e5;
+}
+.team_slider_more_btn a i {
+  margin-right: 5px;
+}
+/*--- css for our team slider section in full screen ends --*/
+/*--- css for achievement section in full screen starts --*/
+.achievement {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(77, 74, 74);
+}
+.achievement .achievement_cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.achievement_cont_inner {
+  text-align: center;
+  color: white;
+}
+.achievement_cont_inner h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.achievement_cont_inner h1 span {
+  font-size: 38px;
+}
+/*--- css for achievement section in full screen ends --*/
+/*--- css for Our Work section in full screen ends --*/
+.work {
+  width: 100%;
+  padding: 80px 10px 50px 10px;
+}
+.work > h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.work_main {
+  width: 100%;
+  /* ==================== */
+  /* ==================== */
+  display: flex;
+  flex-wrap: wrap;
+}
+.work_card_cont {
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: max-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.work_card_img_cont {
+  width: 50%;
+  padding: 15px 10px;
+}
+.work_card_img_cont img {
+  width: 100%;
+}
+.work_card_text_cont {
+  width: 50%;
+  padding: 25px 15px 15px 15px;
+}
+.work_card_text_cont a {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 5px 30px;
+  text-decoration: none;
+  border: none;
+  font-size: 20px;
+  word-spacing: 2px;
+  color: black;
+  background-color: rgb(250, 153, 153);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.work_card_text_cont a:hover {
+  background-color: #e2e0e5;
+}
+.work_card_text_cont a i {
+  margin-right: 5px;
+}
+
+/*--- css for Our Work section in full screen ends --*/
+/*--- css for Pricing section in full screen starts --*/
+.pricing {
+  width: 100%;
+  padding: 50px 0 80px 0;
+  background-color: rgb(230, 228, 228);
+}
+.pricing > h1 {
+  text-align: center;
+}
+.pricing > p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.pricing_cont {
+  margin-top: 50px;
+  width: 100%;
+}
+.pricing_cont_inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pricing_card_cont {
+  width: 30%;
+  margin: 0 5px;
+
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 1px 1px 5px;
+  position: relative;
+}
+.personal_bg {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(190, 253, 165),
+    rgb(108, 169, 250)
+  );
+}
+.team_bg {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(220, 241, 100),
+    rgb(250, 112, 227)
+  );
+}
+.enterprise_bg {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(128, 182, 253),
+    rgb(172, 250, 108)
+  );
+}
+.pricing_card_cont > img {
+  width: 100%;
+  opacity: 0.6;
+}
+.pricing_card_cont h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+.pricing_card_cont > h1 {
+  text-align: center;
+  font-size: 50px;
+  margin: 20px 0;
+}
+.pricing_card_cont > h1 span {
+  font-size: 60px;
+}
+.pricing_card_cont > ul {
+  text-align: center;
+  padding: 0 10px;
+}
+.pricing_card_cont > ul > li {
+  margin: 5px 0;
+}
+.pricing_card_cont > button {
+  display: block;
+  margin: 40px auto;
+  padding: 10px;
+  width: 60%;
+  border: none;
+  background-color: rgb(37, 3, 116);
+  border: 2px solid rgb(24, 1, 78);
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.pricing_card_cont > button:hover {
+  background-color: rgb(223, 216, 238);
+  color: rgb(24, 1, 78);
+}
+/* CSS for pricing card overlay starts */
+
+.pricing_card_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(181, 22, 187),
+    rgb(3, 116, 106)
+  );
+  width: 100%;
+  height: 100%;
+  transform-origin: left top;
+  transition: all 0.5s;
+  padding: 20px;
+}
+.overlay_hidden {
+  transform: rotate(91deg);
+}
+.overlay_visible {
+  transform: rotate(deg);
+}
+.pricing_card_overlay button {
+  padding: 7px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.pricing_card_overlay button:hover i {
+  margin-right: 20px;
+}
+.pricing_card_overlay button i {
+  transition: all 0.3s;
+  margin-right: 10px;
+}
+.pricing_card_overlay h3 {
+  text-align: center;
+  margin: 40px 0;
+  color: white;
+}
+.pricing_card_overlay p {
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+  color: white;
+}
+.pricing_card_overlay .buy_now_btn {
+  display: block;
+  width: 70%;
+  border: none;
+  border: 15px;
+  margin: 70px auto 0 auto;
+  transition: all 0.3s;
+}
+.pricing_card_overlay .buy_now_btn:hover {
+  width: 75%;
+}
+/* CSS for pricing card overlay ends */
+/*--- css for Pricing section in full screen ends --*/
+/*--- css for Contact Us section in full screen starts --*/
+.contact {
+  width: 100%;
+  display: flex;
+}
+.contact_left {
+  width: 35%;
+  height: auto;
+  background-color: rgb(248, 112, 88);
+  color: white;
+  padding: 50px;
+}
+.contact_left > h1 {
+  font-size: 40px;
+}
+.contact_left > h4 {
+  margin: 20px 0 70px 0;
+  font-size: 20px;
+}
+.contact_left .information {
+  margin: 25px 0;
+  display: flex;
+}
+.contact_left .information a {
+  width: max-content;
+  height: max-content;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+.contact_left .information p {
+  line-height: 27px;
+  font-size: 18px;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+}
+.contact_left .information a i {
+  font-size: 25px;
+  border-radius: 30px;
+  color: white;
+}
+.location_pad {
+  padding: 10px 13px;
+}
+.phone_pad {
+  padding: 10px 10px;
+}
+.email_pad {
+  padding: 10px 10px;
+}
+.web_pad {
+  padding: 10px 10px;
+}
+.contact_left .information p {
+  padding: 0 20px;
+}
+.contact_right {
+  width: 65%;
+  height: auto;
+  background-color: grey;
+  padding: 50px;
+}
+.contact_right > form {
+  display: flex;
+  flex-direction: column;
+}
+.contact_right > form > * {
+  margin: 10px 0;
+}
+.contact_right > form span {
+  margin: 0 !important;
+}
+.contact_right > form input {
+  padding: 7px 12px;
+}
+.contact_right > form textarea {
+  padding: 7px 12px;
+}
+.contact_right > form #submit_btn {
+  width: 150px;
+  padding: 15px 40px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  border: 2px solid rgb(248, 112, 88);
+  background-color: rgb(248, 112, 88);
+
+  color: white;
+  transition: all 0.2s;
+}
+.contact_right > form #submit_btn:hover {
+  background-color: rgb(252, 217, 210);
+  color: rgb(248, 112, 88);
+}
+/*--- css for Contact Us section in full screen ends --*/
+/*--- css for Location image section in full screen starts --*/
+.location_img_cont {
+  width: 100%;
+  padding: 100px 0;
+}
+.location_img_cont img {
+  width: 100%;
+}
+/*--- css for Location image section in full screen ends --*/
+/*--- css for Footer in full screen starts --*/
+footer {
+  width: 100%;
+  background-color: black;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(240, 239, 239);
+}
+footer > a {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(240, 239, 239);
+  transition: all 0.2s;
+}
+footer > a:hover {
+  background-color: rgb(182, 181, 181);
+}
+footer a > i {
+  margin-right: 10px;
+}
+footer .social_links {
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+footer .social_links a {
+  margin: 0 10px;
+}
+footer .social_links a i {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(240, 239, 239);
+}
+footer h2 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+footer h2 span {
+  color: rgb(248, 112, 88);
+  margin-left: 5px;
+}
+/*--- css for Footer in full screen ends --*/
+@media only screen and (max-width: 992px) {
+  /*--- css for Our Work section in large screen ends --*/
+  .work_card_cont {
+    flex-basis: 100%;
+  }
+  /*--- css for Our Work section in large screen ends --*/
+  /*--- css for Contact Us section in large screen starts --*/
+  .contact_left {
+    padding: 50px 10px;
+  }
+  .contact_right {
+    padding: 50px 10px;
+  }
+  .contact_left > h1 {
+    font-size: 30px;
+  }
+  .contact_left > h4 {
+    margin: 20px 0 50px 0;
+    font-size: 18px;
+  }
+
+  .contact_left .information a i {
+    font-size: 20px;
+    border-radius: 25px;
+  }
+  .location_pad {
+    padding: 7px 9.5px;
+  }
+  .phone_pad {
+    padding: 7px 7px;
+  }
+  .email_pad {
+    padding: 7px 7px;
+  }
+  .web_pad {
+    padding: 7px 7px;
+  }
+
+  .contact_left .information p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  /*--- css for Contact Us section in large screen ends --*/
+}
+@media only screen and (max-width: 768px) {
+  /*=== nav code for mid size screen starts here ===*/
+  header {
+    justify-content: space-between;
+    height: 50px;
+  }
+
+  .nav_link_box {
+    display: none; /* making display none of big screen nav container*/
+  }
+  .nav_cont {
+    width: 100px;
+  }
+  .nav_cont .hum {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav_cont .hum i {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  .mob_nav_link_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    min-width: 200px;
+    min-height: 100vh;
+  }
+  .mob_nav_link_box a {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 100%;
+    height: 50px;
+    transition: all 0.3s;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+  }
+  .mob_nav_link_box a i {
+    font-size: 10px;
+    margin: 0 10px;
+  }
+  .mob_nav_link_box a:hover {
+    background-color: rgb(240, 238, 238);
+    color: black;
+  }
+  #close_btn {
+    margin-bottom: 25px;
+  }
+  /*=== nav code for mid size screen ends here ===*/
+  /*--- css for about the company section in mid size screen startss --*/
+  section .specification_cont {
+    flex-direction: column;
+  }
+  section .specification_cont .specification_cont_box {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .specification_inner_box p {
+    font-size: 14px;
+  }
+  /*--- css for about the company section in mid size screen ends --*/
+  /* -------------------------------------------------------- */
+  /*--- css for We know design section in mid screen starts --*/
+  .our_design {
+    padding: 15% 5%;
+  }
+  .our_design_cont {
+    flex-direction: column;
+  }
+  .our_design_content_box {
+    width: 100%;
+    margin-bottom: 40px;
+    padding-right: 0;
+  }
+  .our_design_video_box {
+    width: 100%;
+  }
+  /*--- css for We know design section in mid screen ends --*/
+  /*--- css for Pricing section in mid screen starts --*/
+  .pricing_cont_inner {
+    max-width: 400px;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .pricing_card_cont {
+    margin: 20px 0;
+    width: 100%;
+  }
+  /*--- css for Pricing section in mid screen ends --*/
+  /*--- css for Contact Us in mid screen starts --*/
+  .contact {
+    flex-direction: column;
+  }
+  .contact_left {
+    width: 100%;
+  }
+  .contact_right {
+    width: 100%;
+  }
+  .contact_left {
+    padding: 50px 30px;
+  }
+  .contact_right {
+    padding: 50px 30px;
+  }
+  /*--- css for Contact Us in mid screen ends --*/
+}
+@media only screen and (max-width: 576px) {
+  /*----- css for banner small screen starts  -----*/
+  .banner h1 {
+    font-size: 40px;
+  }
+  .banner p {
+    margin: 20px 0 5px 0;
+    font-size: 18px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+  }
+  .banner a {
+    padding: 7px 10px;
+  }
+  /*----- css for banner small screen ensds  -----*/
+  /*--- css for about the company section in small size screen starts --*/
+
+  section .specification_cont .specification_cont_box {
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+  .specification_card {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  /*--- css for about the company section in small size screen ends --*/
+  /*--- css for We know design section in small screen starts --*/
+  .our_design {
+    padding: 20% 5%;
+  }
+  /*--- css for We know design section in small screen ends --*/
+  /*--- css for our team slider section in small screen starts --*/
+  .team_card_container {
+    flex-basis: 100%;
+  }
+
+  .team_slider_more_btn {
+    height: 75px;
+  }
+  .team_slider_more_btn a {
+    padding: 10px 20px;
+    font-size: 16px;
+    word-spacing: 1px;
+  }
+  .team_slider_more_btn a i {
+    margin-right: 3px;
+  }
+  /*--- css for our team slider section in small screen ends --*/
+  /*--- css for achievement section in small screen starts --*/
+  .achievement {
+    padding: 25px 0 15px 0;
+  }
+  .achievement .achievement_cont {
+    flex-direction: column;
+  }
+  .achievement_cont_inner {
+    margin-bottom: 35px;
+  }
+  .achievement_cont_inner h1 {
+    margin-bottom: 0;
+  }
+  /*--- css for achievement section in small screen ends --*/
+  /*--- css for Our Work section in small screen ends --*/
+  .work {
+    padding: 80px 10px 20px 10px;
+  }
+  .work_card_cont {
+    flex-direction: column;
+  }
+  .work_card_img_cont {
+    width: 100%;
+  }
+  .work_card_text_cont {
+    width: 100%;
+  }
+  .work_card_text_cont {
+    padding: 0px 15px 50px 15px;
+  }
+  /*--- css for Our Work section in small screen ends --*/
+  /*--- css for Contact Us section in small screen starts --*/
+  .contact_left {
+    padding: 50px 10px;
+  }
+  .contact_right {
+    padding: 50px 10px;
+  }
+  /*--- css for Contact Us section in small screen ends --*/
+  /*--- css for Location img section in small screen starts --*/
+  .location_img_cont {
+    width: 100%;
+    padding: 50px 0;
+  }
+  /*--- css for Location img section in small screen ends --*/
+  /*--- css for Footer section in small screen starts --*/
+  footer > a {
+    padding: 5px 20px;
+  }
+  footer a > i {
+    margin-right: 10px;
+  }
+  footer .social_links {
+    margin: 15px 0;
+  }
+  footer .social_links a {
+    margin: 0 8px;
+  }
+  footer .social_links a i {
+    font-size: 22px;
+  }
+  footer h2 {
+    letter-spacing: 1px;
+  }
+  footer h2 span {
+    margin-left: 3px;
+  }
+  /*--- css for Footer section in small screen ends --*/
+}
